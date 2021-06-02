@@ -1,0 +1,128 @@
+.seatBooking {
+    overflow: hidden;
+    margin-top: 50px;
+}
+.seatLayout {
+    width: 70%;
+    float: left;
+    padding: 39px 0 10px 0;
+}
+
+.seatLayout .bus {
+    height: 300px;
+    width: 85%;
+    margin: 0 auto;
+    padding: 20px 50px;
+    border: 2px solid #ddd;
+    border-radius: 70px 30px 30px 70px;
+
+}
+
+.bus img {
+    margin-top: 190px;
+    transform: rotate(270deg);
+}
+
+.seatInvoiceWrap {
+    width: 30%;
+    float: left;
+}
+
+.bus table {
+    float: right;
+}
+
+
+.seat {
+    width: 35px;
+    height: 35px;
+    margin: 10px;
+    border-radius: 5px;
+    color: #000000;
+}
+
+.seatHighlightWrap {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10px;
+}
+
+.highlightItem {
+    height: 25px;
+    line-height: 25px;
+}
+
+.highlight {
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.seat.blocked, .highlight.blocked {
+    background-color: #9F9F9F;
+    border: 2px solid #686868;
+}
+
+.seat.booked, .highlight.booked {
+    background-color: #0B56BB;
+    border: 2px solid #0375EC;
+    color: white;
+}
+
+.seat.lady, .highlight.lady {
+    background-color: #FF7271;
+    border: 2px solid #FB4E4D;
+}
+
+.seat.available, .highlight.available {
+    background-color: #82C9FF;
+    border: 2px solid #2C98FA;
+}
+
+.seat.selected {
+    background-color: #F8A537;
+    border: 2px solid #E48E16;
+    color: white;
+}
+
+
+.seatInvoice {
+    padding: 20px 10px;
+}
+
+.selectedSeatBox {
+    border: 1px solid #eee;
+    border-radius: 5px;
+    -webkit-box-shadow: 2px 3px 5px 1px #ccc;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+    -moz-box-shadow:    2px 3px 5px 1px #ccc;  /* Firefox 3.5 - 3.6 */
+    box-shadow:         2px 3px 5px 1px #ccc;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+}
+
+.selectedSeat {
+    padding: 15px;
+    min-height: 100px;
+}
+
+.totalAmount {
+    display: flex;
+    justify-content:space-between;
+    padding: 15px;
+    border-top: 1px dashed #999;
+}
+
+.bookingButton {
+    background-color: #F8A537;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 4px 2px;
+    border-radius: 50px;
+    align-items: center;
+}
